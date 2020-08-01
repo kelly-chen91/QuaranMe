@@ -9,31 +9,33 @@
       sizes="32x32"
     />
 
-    <title>Take Action</title>
+    <title>Mental & Emotional Self-Care</title>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- import the webpage's stylesheet -->
+    <!-- import the webpage's stylesheets -->
     <link rel="stylesheet" href="/style.css" />
     <link rel="stylesheet" href="/take-action.css" />
     <link rel="stylesheet" href="/column.css" />
+    <link rel="stylesheet" href="/merch.css" />
     <link rel="stylesheet" href="resources.css" />
+    <link rel="stylesheet" href="mental-emotional-title.css" />
 
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
 
-    <!--import font-->
+    <!-- Add your Google fonts here -->
     <link
       href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap"
       rel="stylesheet"
     />
-
     <link
       href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
       rel="stylesheet"
     />
   </head>
+
   <body class="subpage">
     <div>
       <nav>
@@ -63,56 +65,47 @@
         </ul>
       </nav>
     </div>
-
-    <div class="page-header-action">
-      <h1>Take Action</h1>
+  
+    <div class="physical-columns">
+      <div class="page-header-action">
+      <h1>Mental & Emotional Self Care</h1>
     </div>
-
-    <!--Create a flex container to hold the description of your action and your check list -->
-    <div class="flex-container-action">
-      <!--Create a flex item to hold your description here-->
-      <div class="action-info-container">
-        <h2>Your Very Own Self-Care Checklist</h2>
-        <p>
-          To help streamline activities & routines, as well as keep up with
-          personal responibilities, you can now write down all of your needs
-          here on QuaranMe!
-        </p>
-        <h2>
-          How To Use the Checklist
-        </h2>
-        <p id="script">
-          <ol>
-            <li>Click on "What's my task of the day?"</li> 
-            <li>Type your task!</li> 
-            <li>Press "Add". If you do not have any
-                text written within the text form, you will 
-                recieve an alert informing you that there is 
-                no text, and will make you write some.</li> 
-            <li> Once you have completed an item, click on it to check it off your checklist. If you wish to delete your task completely,
-                 click the "×" button shown on the right side of your list item.</li> 
-        </ol>
-        </p>
+      <div class="columns">
+        <h3>
+          Detoxify.
+        </h3>
+        <ul>
+          <li>Set a time limit on social media!</li>
+          <li>
+            Set a time out for putting away <br />
+            your electronics!
+          </li>
+          <li>
+            Enjoy the present; either look <br />
+            out at nature, go outside with a <br />
+            mask to go on a walk, read a book, <br />
+            or spend time with loved ones.
+          </li>
+        </ul>
       </div>
-
-      <!--Create a flex item to hold your action checklist here-->
-      <div class="action-list-container" id="checklist">
-        <div class="list-header">
-          <h2 id="checklist-header">My Action Items</h2>
-          <p id="instructions">
-            <!--Once you have completed an item, click it to check it off your list!-->
-          </p>
-          <div id = "input-text">
-          <input
-            type="text"
-            id="myInput"
-            placeholder="What's my task of the day?"
-          />
-          <span onclick="newElement()" class="addBtn">Add</span>
-          </div>
-        </div>
-        <ul id="my-list">
-          <li class="action-li">Meditate!</li>
+      <div class="columns">
+        <h3>
+          Create Healthy Habits.
+        </h3>
+        <ul>
+          <li>
+            Go to sleep on time! 8 hours of sleep is <br />
+            the best~
+          </li>
+          <li>
+            Wake up on time! You’ll feel <br />
+            accomplished, especially <br />
+            if you have made your bed and done <br />
+            something productive in the morning :)
+          </li>
+          <li> Journal! Get a notebook and write <br/>
+               about your day and feelings. Trust <br/>
+               us, you'll feel better!</li>
         </ul>
       </div>
     </div>

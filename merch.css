@@ -1,0 +1,301 @@
+
+* {
+  box-sizing: border-box;
+}
+
+  .navs{
+  background: #FFFAEC;
+  overflow: hidden; 
+}
+.nav-image{
+  float: left; 
+  postion: relative;
+  padding:14px, 16px;
+  background-color: #E36631;
+  display:block;
+  min-width: 60px;
+}
+.nav-image:hover{
+    background-color: #F8AAAC;
+
+}
+a{
+  color: #FFFAEC;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #FFFAEC;
+}
+
+/************************************************/
+/*************** CSS FOR NAV BAR ****************/
+/************************************************/
+
+/* Style the ul element with the class nav-bar*/
+/*
+ul.nav-bar { 
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #e36631;
+  
+}
+*?
+/* Style the li elements with the class nav */
+/*
+li.nav {
+  float: left;
+  font-size: 15px;
+}
+*/
+/* Style the a elements in the li class nav */
+/*
+li.nav a {
+  display: block;
+  color: #FFFAEC;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+*/
+/* Style the a elements in the li class nav when the mouse is hovering */
+/*
+li.nav a:hover {
+  background-color: #F8AAAC;
+  color: #E36631;
+}
+*/
+/* Style the a elements in the li class nav when the mouse is hovering */
+ul.nav-bar { 
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #e36631;
+  
+}
+
+/* Style the li elements with the class nav */
+li.nav, li.dropdown {
+  float: left;
+  font-size: 15px; 
+  display: inline-block;
+}
+
+/* Style the a elements in the li class nav */
+li.nav a, .dropdown:hover, .dropbtn{
+  display: block;
+  color: #FFFAEC;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover {background-color: #f1f1f1;}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Style the a elements in the li class nav when the mouse is hovering */
+li.nav a:hover, .dropbtn:hover {
+  background-color: #F8AAAC;
+  color: #E36631;
+}
+
+body,
+html {
+  height: 100%;
+  font-size: 20px;
+  font-family: 'Roboto Mono', monospace;/* Change this to your font */
+  line-height: 1.5em;
+  margin: 0em;
+  color: #473049;
+  background-color: #FFBD55;
+  box-sizing: border-box;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+  .navs{
+  background: #FFFAEC;
+  overflow: hidden; 
+}
+.nav-image{
+  float: left; 
+  postion: relative;
+  padding:14px, 16px;
+  background-color: #E36631;
+  display:block;
+}
+.nav-image:hover{
+    background-color: #F8AAAC;
+
+}
+a{
+  color: #FFFAEC;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #FFFAEC;
+}
+
+/************************************************/
+/*************** CSS FOR NAV BAR ****************/
+/************************************************/
+
+/* Style the ul element with the class nav-bar*/
+ul.nav-bar { 
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #e36631;
+  
+}
+
+/* Style the li elements with the class nav */
+li.nav {
+  float: left;
+  font-size: 15px;
+}
+
+/* Style the a elements in the li class nav */
+li.nav a {
+  display: block;
+  color: #FFFAEC;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* Style the a elements in the li class nav when the mouse is hovering */
+li.nav a:hover {
+  background-color: #F8AAAC;
+  color: #E36631;
+}
+
+/* Style the a elements in the li class nav when the mouse is hovering */
+
+
+  body {
+  margin: 0;
+  font-family: "Roboto";
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}

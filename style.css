@@ -1,108 +1,167 @@
-/* 
 
-This CSS file is contains the CSS rule sets for 
-    - index.html
-    - any universal elements that all pages use
-
-The CSS for the take-action.html is in take-action.css
-
-*/
 
 /************************************************/
 /************* UNIVERSAL ELEMENTS ***************/
 /************************************************/
 
-/* TODO: Customize your font properties and background color for all elements inside the <body> and <html> tags */
 body,
 html {
   height: 100%;
-  font-size: 20px; /* Change the font size*/
-  font-family: "Roboto", sans-serif; /* Change the font */
-  line-height: 1.5em; /* Change the line height size*/
+  font-size: 20px;
+  font-family: "Roboto", sans-serif; /* Change this to your font */
+  line-height: 1.5em;
   margin: 0em;
-  color: white; /* Change the font color*/
-  background-color: #0D38D3; /* Change the background color */
+  color: white;
+  background-color: #E36631;
   box-sizing: border-box;
 }
 
 h1 {
   letter-spacing: 5px;
   font-size: 50px;
-  /*TODO: Change the font-family property to your linked font*/
-  font-family: "Roboto Mono", sans-serif;
-  color: #43d6b9ff;
+  font-family: "Roboto", sans-serif; /* Change this to your font */
+  color: #FFFAEC;
   text-align: center;
 }
 
-/*TODO: Change the font-family property to your linked font*/
 h2 {
   letter-spacing: 3px;
   font-size: 25px;
-  font-family: "Roboto Mono", sans-serif;
-  color: #43d6b9ff;
+  font-family: "Roboto Mono", sans-serif; /* Change this to your font */
+  color: #FFFAEC;
   text-align: center;
   line-height: 1.3em;
 }
+.navs{
+  background: #FFFAEC;
+  overflow: hidden; 
+}
+.nav-image{
+  float: left; 
+  postion: relative;
+  padding:14px, 16px;
+  background-color: #E36631;
+  display:block;
+  min-width: 60px;
 
-/*TODO: Change the color of a link when a person hovers over it*/
-p a {
-  color: #43d6b9ff;
+}
+.nav-image:hover{
+    background-color: #F8AAAC;
+
+}
+a{
+  color: #FFFAEC;
   text-decoration: none;
+}
+
+a:hover {
+  color: #FFFAEC;
+}
+
+#help a{
+  color: blue;
 }
 
 /************************************************/
 /*************** CSS FOR NAV BAR ****************/
 /************************************************/
 
-/* All of these TODOs are optional. You should change the styling based on your mockup */
-
-/* TODO (optional): Change the background color and/or border style */
-
-ul.nav-bar {
-  /* Styling for the <ul class="nav-bar"> element */
+/* Style the ul element with the class nav-bar*/
+ul.nav-bar { 
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #43d6b9ff;
-  border-style: solid;
-  border-color: #0D38D3;
+  background-color: #e36631;
+  
 }
 
-/* TODO (optional): Change the font size*/
-
-li.nav {
-  /* Styling for the <li class="nav"> element */
-  float: right;
-  font-size: 15px;
+/* Style the li elements with the class nav */
+li.nav, li.dropdown {
+  float: left;
+  font-size: 15px; 
+  display: inline-block;
+  positon:relative;
 }
 
-/* TODO (optional): Change the font color, decoration, and/or case */
-
-li.nav a {
-  /* Styling for the <a> elements in <li class="nav"> */
+/* Style the a elements in the li class nav */
+li.nav a, .dropdown:hover, .dropbtn{
   display: block;
-  color: #0D38D3;
+  color: #FFFAEC;
   text-align: center;
-  padding: 14px 16px;
+  padding: 14px 16px; 
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
+  cursor: pointer;
+  border:none;
+  
 }
 
-/* TODO (optional): Change the background color and/or font color when the mouse hovers over an item */
-
-li.nav a:hover {
-  /* Styling for the <a> elements when the mouse is hovering in <li class="nav"> */
-  background-color: #0D38D3;
-  color: #43d6b9ff;
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* edit this */
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px; 
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover {background-color: #f1f1f1;}
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
+/* Style the a elements in the li class nav when the mouse is hovering */
+li.nav a:hover, .dropbtn:hover {
+  background-color: #F8AAAC;
+  color: #E36631;
+}
+
+/* Style the a elements in the li class nav when the mouse is hovering */
+
+
+
 /************************************************/
-/*********** CSS FOR FLEXBOX HEADING ************/
+/************** CSS FOR INDEX.HTML **************/
 /************************************************/
 
-/* TODO: Review the CSS properties to the flexbox container for title and intro text */
+/*-----------TOP IMAGE + TEXT-----------*/
+/* Container for top image and text - Designed for mobile first */
+.main-message {
+  
+  background-image: url("https://cdn.glitch.com/646676a3-773d-469d-8139-efba3d9a0c6f%2Fself-care-home.png?v=1595978500083");
+  
+  min-height: 100%;
+  background-size: auto;
+  background-color: #E36631;
+  /*border-style: dotted; /*Uncomment to see the outline of the container*/
+}
+
+/*-----------PARALLAX SCROLL-----------*/
+.main-message,
+.image-one,
+.image-two,
+.image-three,
+.image-four {
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #E36631;
+  background-size: cover;
+  min-height: 100%; /*Adjust the gap between sections*/
+
+  /*Creates the scrolling effect*/
+  background-attachment: fixed;
+}
+
+/* Flexbox container for title and intro text */
 .flex-container {
   display: flex; /* Set the flexbox display */
   flex-direction: row; /* Configure the flex items to row */
@@ -110,106 +169,136 @@ li.nav a:hover {
   justify-content: center; /* Justify the flex items to the center */
   align-items: center; /* Align the flex items to the center */
 
-  /* Design properties */
-  background-color: #0D38D3;
-  padding: 5px;
+  background-color: #e36631;
 
-  /* Positioning properties */
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
   position: absolute;
-  left: 20%;
-  right: 20%;
-  top: 40%; /* Change this value to move the box up or down */
-
-  /*Debugging Tip: Uncomment the line below to see the outline of the container*/
-  /*border-style: dotted;*/
+  padding: 5px;
+  align-items: center;
+  top: 50%;
+  left: 10%;
+  right: 10%;
 }
 
-/* TODO: Review the CSS properties to the flex item for the heading (the left box) */
+/* Left box */
 .heading-home {
-  padding: 2%;
-  color: #43d6b9ff;
+  padding: 4%;
+  margin: 2%;
+  text-align: center;
+  color: #FFFAEC;
   font-size: 50px;
   letter-spacing: 10px;
   line-height: 60px;
-  text-align: center;
-
-  /*Debugging Tip: Uncomment the line below to see the outline of the container*/
-  /*border-style: dotted;*/
+  /*border-style: dotted; /*Uncomment to see the outline of the container*/
 }
 
-/* TODO: Review the CSS properties to the flex item for the intro text (the right box) */
+/* Right box */
 .intro-text {
-  background-color: #43d6b9ff; /* Add your own background color */
   padding: 4%;
-  margin: 3%;
-  color: #0D38D3; /* Add the color of your font */
+  margin: 2%;
+  text-align: center;
+  color: #FFFAEC; /* Add the color of your font */
+  background-color: #F69D10; /* Add your own background color */
   font-size: 20px; /* Add your font size*/
   letter-spacing: 2px; /* Adds space between letters */
   line-height: 1.4em; /* Adds space between lines */
-  text-align: center;
+  /*border-style: dotted; /*Uncomment to see the outline of the container*/
 
-  /*Debugging Tip: Uncomment the line below to see the outline of the container*/
-  /*border-style: dotted;*/
-}
-
-/************************************************/
-/*************** PARALLAX SCROLL ****************/
-/************************************************/
-
-/*-----------TEXT SECTIONS-----------*/
-
-/* TODO (optional): Change the background color and/or text alignment */
-
-.text-section {
-  background-color: #0D38D3;
-  padding: 20px 45px;
-  margin: 35px;
-  text-align: center;
-}
-
-/*---------IMAGE STYLING + PARALLAX PROPERTY---------*/
-
-/* TODO: Add the CSS selector for each image to the collective image rule set */
-
-.main-message,
-.image-one {
-  position: relative;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: #43d6b9ff;
-  background-size: cover;
-  min-height: 100%; /* This adjusts the height of the image */
-
-  /* TODO: Add the property to create the parallax scrolling effect here */
   
 }
 
-/* TODO: Replace the current image URL with your own. This is the top image on your homepage. */
-.main-message {
-  background-image: url("https://cdn.glitch.com/eb615d20-f1f4-4443-bd45-85e1d5bde77b%2Fkitten.jpg?v=1589124083210");
+/*-----------TEXT SCROLLING SECTIONS-----------*/
+.text-section {
+  background-color: #E36631;
+  padding: 20px 45px;
+  margin: 35px;
+  text-align: center;
+  line-height: 50px;
 }
 
-/* TODO: Replace the current image URL with your own */
+.text-section:hover{
+  opacity: 0.7;
+} 
+
+
+
+/*-----------IMAGES-----------*/
+
 .image-one {
-  background-image: url("https://cdn.glitch.com/eb615d20-f1f4-4443-bd45-85e1d5bde77b%2Fpuppy.jpg?v=1589146535603");
+  background-image: url("https://cdn.glitch.com/646676a3-773d-469d-8139-efba3d9a0c6f%2Fabstract%20background%201%20for%20QuaranMe.jpg?v=1595989078834");
 }
 
-/* TODO: Add a second background image. Make sure you add this class selector to the collective image rule set above */
-
-/* TODO: Add more background images by repeating the process above */
-
-/*-----------IMAGE ATTRIBUTIONS (if required)-----------*/
-.attributions {
-  font-size: 12px;
-  text-align: right;
-  margin-right: 10px;
+.image-two {
+  background-image: url("https://cdn.glitch.com/646676a3-773d-469d-8139-efba3d9a0c6f%2Fabstract%20background%203%20for%20QuaranMe.jpg?v=1595989096389");
 }
+
+.image-three {
+  background-image: url("https://cdn.glitch.com/646676a3-773d-469d-8139-efba3d9a0c6f%2Fabstract%20background%204%20for%20QuaranMe.jpg?v=1595989107590");
+}
+
+.image-four {
+  background-image: url("https://cdn.glitch.com/646676a3-773d-469d-8139-efba3d9a0c6f%2Fabstract%20background%202%20for%20QuaranMe.jpg?v=1595989089217");
+}
+
+/* Add more images here for more scrolling! */
+
 
 /******************************************************/
 /***** CHANGE INDEX.HTML CSS BASED ON SCREEN SIZE *****/
 /******************************************************/
 
-/* TODO: Add a breakpoint if the screen is 700px or less */
+/* IF THE SCREEN IS ~~700 OR LESS~~ IMPLEMENT THESE RULES */
 
+@media only screen and (max-width: 700px) {
+  .main-message,
+  .image-one,
+  .image-two,
+  .image-three,
+  .image-four {
+    background-attachment: scroll;
+  }
 
-/* TODO: Add additional breakpoints based on your website's design
+  .flex-container {
+    flex-wrap: wrap;
+  }
+}
+
+/* IF THE SCREEN IS ~~701 OR MORE~~ IMPLEMENT THESE RULES */
+
+@media only screen and (min-width: 701px) {
+  .flex-container {
+    flex-wrap: nowrap;
+    left: 25%;
+    right: 25%;
+  }
+}
+
+/* IF THE SCREEN IS ~~1250 OR MORE~~ IMPLEMENT THESE RULES */
+@media only screen and (min-width: 1250px) {
+  h3 {
+    font-size: 35px;
+  }
+
+  .main-message,
+  .image-one,
+  .image-two,
+  .image-three,
+  .image-four {
+    background-attachment: fixed;
+  }
+
+  .main-message {
+    height: 75%;
+  }
+
+  .textSection {
+    margin: 1.5% 15%;
+    font-size: 20px;
+    line-height: 1.5em;
+    /*border-style: dotted;*/ /*Uncomment to see the outline of the container*/
+  }
+}
+

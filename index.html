@@ -1,30 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- TODO: Update the heading with the name of your website -->
-    <title>My Cause</title>
-
+    
+       <!-- string of code for my favicon (to look at this, look at the tab of the webpage) -->
+  <link rel="icon" href="https://cdn.glitch.com/646676a3-773d-469d-8139-efba3d9a0c6f%2Ffavicon-32x32.png?v=1595979049380" type="image/png" sizes="32x32">
+    
+    <title>QuaranMe</title>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- import the webpage's stylesheets -->
-    <link rel="stylesheet" href="/style.css" />
-    <link rel="stylesheet" href="/take-action.css" />
+     <link rel="stylesheet" href="/style.css" />
+
 
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
 
-    <!-- TODO: Add any links to Google font families here -->
+    <!-- Add your Google fonts here -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
+      <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  
+ <!-- Add the nav bar here-->
+  
   </head>
   <body>
+   <div>
     <nav>
+
       <ul class="nav-bar">
-        <li class="nav"><a href="take-action.html">Take Action</a></li>
-        <li class="nav"><a href="index.html">Home</a></li>
+         <li class ="logo"><a href ="index.html"><img class ="nav-image" src = "https://cdn.glitch.com/646676a3-773d-469d-8139-efba3d9a0c6f%2FquaranMe%20logo.png?v=1595978495449" style ="width:4.3%;height:auto;"></a></li>
+        <li class ="nav"><a href = "disclaimer.html">Disclaimer</a></li>
+          <li class="nav"><a href="take-action.html">Take Action</a></li>
+        <li class="nav"><a href="timer.html">Timer</a></li>
+          <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Strategies</a>
+    <div class="dropdown-content">
+      <a href="physical.html">Physical Self Care</a>
+      <a href="social.html">Social Self Care</a>
+      <a href="mental-emotional.html">Mental/Emotional Care</a>
+      <a href="financial.html">Financial Care</a>
+    </div>
+  </li>
+        <li class="nav"><a href="resources.html">Resources</a></li>
+        <li class="nav"><a href="merch.html">Merch</a></li>
+
       </ul>
     </nav>
-
+    </div>
     <!------------------------------->
     <!---------TOP SECTION----------->
     <!------------------------------->
@@ -32,14 +61,10 @@
     <div class="main-message">
       <div class="flex-container">
         <div class="heading-home">
-          <!-- TODO: Update the heading with the title of your website -->
-          YOUR TITLE HERE 
+          QUARANME
         </div>
-
         <div class="intro-text">
-          <!-- TODO: Update the placeholder introduction text with your own intro text -->
-
-          Cat ipsum dolor sit amet, in the plant pot or nyan fluffness ahh cucumber! 
+          Your one-stop shop for self care.
         </div>
       </div>
     </div>
@@ -48,49 +73,98 @@
     <!----------SECTION 1------------>
     <!------------------------------->
     <!--Text section-->
+    <!--Text section-->
+    
     <div class="text-section">
+      <a href = "physical.html" class = "hyperlink">
       <h2>
-        <!-- TODO: Update the heading with your own -->
-
-        Header
+        Physical Self-Care
       </h2>
-
       <p>
-        <!-- TODO: Update the text with your own -->
-
-        This is kitty ipsum. It's just dummy text. So meowzer i like to spend my
-        days sleeping.
+        Our bodies do so much for us. Let's how some gratitude towards them!
       </p>
-
-      <!-- OPTIONAL TODO: If you need to attribute the image in a section, add it the text section -->
-
       <p class="attributions">
-        Image taken from <a href="https://girlswhocode.com/">this website</a>.
-      </p>
+        <!-- reference to old pic was here, but everything here is from scratch -->
+      </p>   
+      </a>
     </div>
-
+    
     <!--Image 1-->
-    <div class="image-one"></div>
+    <div class="image-one"> 
+    </div>
+    
+    
 
     <!------------------------------->
     <!----------SECTION 2------------>
     <!------------------------------->
-    <!-- TODO: Copy and paste the HTML from Section 1 and update the text and image class -->
+    <!--Text section-->
+    <div class="text-section">
+      <a href ="social.html" class ="hyperlink">
+      <h2>
+        Social Self-Care
+      </h2>
+      
+      <p>
+      Communication helps with not only with our relationships with others, but with ourself!      
+      </p>
+      </a>
+    </div>
+
+    <!--Image 2-->
+    <div class="image-two"></div>
+    
+    
 
     <!------------------------------->
     <!----------SECTION 3------------>
     <!------------------------------->
-    <!-- TODO: Copy and paste the HTML from Section 1 and update the text and image class -->
+    <!--Text section-->
+    <div class="text-section">
+      <a href="mental-emotional.html">
+      <h2>
+        Mental/Emotional Self-Care
+      </h2>
+      <p>
+        The new normal from COVID-19 can be overwhelming and anxiety-provoking, but taking care of your mental and emotional health is important! 
+      </p>
+      </a>
+    </div>
+
+    <!--Image 3-->
+    <div class="image-three"></div>
 
     <!------------------------------->
-    <!--Copy and paste if you have more than three sections-->
-    <!----------SECTION X------------>
+    <!----------SECTION 4------------>
     <!------------------------------->
-    <!-- TODO: Copy and paste the HTML from Section 1 and update the text and image class -->
+    <!--Text section-->
+    <div class="text-section">
+      <a href="financial.html">
+      <h2>
+        Financial Self-Care
+      </h2>
+      <p>
+        Yes. Finance is also self care. Having good finance skills really help you feel satisfied with all the bills you had paid and no financial burdens.
+
+        <!-- paragraph here -->
+      </p>
+      </a>
+    </div>
+
+    <!--Image 4-->
+    <div class="image-four"></div>
 
     <!------------------------------->
     <!---------ABOUT SECTION--------->
     <!------------------------------->
     <!--Text section only-->
+    <div class="text-section">
+      <h2>
+       About
+      </h2>
+      <p>
+        During the quarantine for the COVID-19 pandemic, many are facing trauma daily as they try to adjust to their new "normal" lives. QuaranMe is made to be a guide to help those that are bored and/or a bit stressed from this new life.
+      </p>
+    </div>
   </body>
 </html>

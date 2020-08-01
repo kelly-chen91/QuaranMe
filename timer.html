@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- string of code for my favicon (to look at this, look at the tab of the webpage) -->
+    <link
+      rel="icon"
+      href="https://cdn.glitch.com/646676a3-773d-469d-8139-efba3d9a0c6f%2Ffavicon-32x32.png?v=1595979049380"
+      type="image/png"
+      sizes="32x32"
+    />
+
+    <title>Timer</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- import the webpage's stylesheets -->
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/take-action.css" />
+    <link rel="stylesheet" href="/column.css" />
+    <link rel="stylesheet" href="/resources.css" />
+    <link rel="stylesheet" href="/financial-title.css" />
+    <link rel="stylesheet" href="/disclaimer.css" />
+    <link rel="stylesheet" href="/timer.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+    <script src="/timer.js" defer></script>
+    <!-- Add your Google fonts here -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Add the nav bar here-->
+  </head>
+
+  <body class="subpage">
+    <div>
+      <nav>
+        <ul class="nav-bar">
+          <li class="logo">
+            <a href="index.html"
+              ><img
+                class="nav-image"
+                src="https://cdn.glitch.com/646676a3-773d-469d-8139-efba3d9a0c6f%2FquaranMe%20logo.png?v=1595978495449"
+                style="width:4.3%;height:auto;"
+            /></a>
+          </li>
+          <li class="nav"><a href="disclaimer.html">Disclaimer</a></li>
+          <li class="nav"><a href="take-action.html">Take Action</a></li>
+          <li class="nav"><a href="timer.html">Timer</a></li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Strategies</a>
+            <div class="dropdown-content">
+              <a href="physical.html">Physical Self Care</a>
+              <a href="social.html">Social Self Care</a>
+              <a href="mental-emotional.html">Mental/Emotional Care</a>
+              <a href="financial.html">Financial Care</a>
+            </div>
+          </li>
+          <li class="nav"><a href="resources.html">Resources</a></li>
+          <li class="nav"><a href="merch.html">Merch</a></li>
+        </ul>
+        <div class="page-header-action">
+          <h1>Timer</h1> 
+        </div>
+      </nav>
+    </div>
+    
+    <div class = "flex-container-action">
+      <div class="action-info-container">
+        <h2>Your Very Own Countdown Timer</h2>
+        <p>
+        Now that you have identified the steps needed to help yourself practice self-care, your next task is to set some time to take care of those activities.
+        </p>
+        <h2>
+          How To Use the Timer
+        </h2>
+        <p id="script">
+          <ol>
+            <li>Click on "minutes" and/or "seconds" and input the amount of time you'd to be on your timer. Remember to type the appropriate value in each box; if you want your timer to be 3 minutes, type "3" into the "minutes" section.</li> 
+            <li>Press "Start" to begin your timer.</li> 
+            <li>If you need a break from your current activity, press Pause. Once you are done with your break, press "Resume" to pick up where you left off, or press "Restart" to start your countdown again.</li> 
+            <li> Once you are done with your task, press "End" to reset your timer to 00:00.</li> 
+            <li> *OPTIONAL* While you are completing your task, please feel free to listen to a live stream of Lo-fi hip-hop by clicking on the video in your timer.</li> 
+        </ol>
+        </p>
+      </div>
+      <div class ="timer-input-container">
+    <form>
+      <div>
+      <input type="text" id="mns" value="minute" size="3" maxlength="3" /> 
+      <input type="text" id="scs" value="seconds" size="2" maxlength="2" />
+      </div>
+      <div class = "buttons">
+      <input type="button" id="btnct" value="START" />
+      <input type="button" id="btnct_res" value="RESTART" />
+      <input type="button" id="btnct_end" value="END" />
+      </div>
+    </form>
+    <br />
+    <br />
+      <iframe class = "video-flex"
+        width="460"
+        height="315"
+        src="https://www.youtube.com/embed/5yx6BWlEVcY"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    <center>
+      <div id="timer">
+        <div id="timer-box">
+          <center>
+            <span>
+              <span id="showmns">00</span>:<span id="showscs">00</span>
+            </span>
+          </center>
+        </div>
+      </div>
+    </center>
+      </div>
+    </div>
+  </body>
+</html>

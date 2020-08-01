@@ -1,0 +1,15 @@
+.page-header-action {
+  /*
+  display: flex;
+  flex-wrap: wrap;*/
+  padding: 15px;
+  width: 100%;
+  position: relative;
+  text-transform: uppercase;
+  background-color: #473049;
+  line-height: 50px;
+}
+
+#help a{
+  color: blue;
+}

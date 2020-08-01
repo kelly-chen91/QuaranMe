@@ -1,0 +1,66 @@
+/******************************************************/
+/************** CSS FOR RESOURCES.HTML **************/
+/******************************************************/
+.subpage {
+  background-image: url("https://cdn.glitch.com/646676a3-773d-469d-8139-efba3d9a0c6f%2FVertical%20Gradient%20for%20QuaranMe.png?v=1596053348910");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  color: white;
+  
+}
+.page-header-action {
+  /*
+  display: flex;
+  flex-wrap: wrap;*/
+  padding: 15px;
+  width: 100%;
+  position: relative;
+  text-transform: uppercase;
+  background-color: #473049;
+  line-height: 50px;
+}
+.container-resources {
+  position: absolute;
+  padding: 0.5em 0;
+  align-items: center;
+
+  left: 5%;
+  right: 5%;
+
+  margin: 5% 0;
+  width: 90%;
+
+}
+
+.resource-list {
+  padding-top: 50px;
+  padding-bottom: 0;
+  padding-right: 0;
+  padding-left: 100px;
+  margin: 0;
+  font-size: 12pt;
+}
+
+/* Styling for individual action list items */
+.resource-list li {
+  cursor: pointer;
+  padding-top: 8px;
+  padding-right: 30px;
+  padding-bottom: 8px;
+  
+  position: relative;
+  width: 85%;
+  color: white;
+  /*border-style: dotted;*/ /*Uncomment to see the outline of the container*/
+}
+
+.resource-list a:hover {
+  color: #fffaec
+}
+
+.resource-list a {
+  color: #473049;
+}

@@ -9,32 +9,47 @@
       sizes="32x32"
     />
 
-    <title>Take Action</title>
+    <title>Financial Self-Care</title>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="/style.css" />
+    <!-- import the webpage's stylesheets -->
+     <link rel="stylesheet" href="/style.css" />
     <link rel="stylesheet" href="/take-action.css" />
     <link rel="stylesheet" href="/column.css" />
+    <link rel="stylesheet" href="/merch.css" />
     <link rel="stylesheet" href="resources.css" />
-
+    <link rel="stylesheet" href="financial-title.css" />
+    
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
 
-    <!--import font-->
+    <!-- Add your Google fonts here -->
     <link
       href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap"
       rel="stylesheet"
     />
-
     <link
       href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
       rel="stylesheet"
     />
   </head>
+
   <body class="subpage">
+    <!-- <div>
+    <nav>
+
+      <ul class="nav-bar">
+         <li class ="logo"><a href ="index.html"><img class ="nav-image" src = "https://cdn.glitch.com/646676a3-773d-469d-8139-efba3d9a0c6f%2FquaranMe%20logo.png?v=1595978495449" style ="width:4.3%;height:auto;"></a></li>
+        <li class="nav"><a href="resources.html">Resources</a></li>
+        <li class="nav"><a href="take-action.html">Take Action</a></li>
+        <li class="nav"><a href="take-action.html">Strategies</a></li>
+        <li class="nav"><a href="merch.html">Merch</a></li>
+
+      </ul>
+    </nav>
+    </div> -->
     <div>
       <nav>
         <ul class="nav-bar">
@@ -63,57 +78,36 @@
         </ul>
       </nav>
     </div>
-
-    <div class="page-header-action">
-      <h1>Take Action</h1>
+    
+     <div class="page-header-action">
+      <h1>financial Self Care</h1>
     </div>
-
-    <!--Create a flex container to hold the description of your action and your check list -->
-    <div class="flex-container-action">
-      <!--Create a flex item to hold your description here-->
-      <div class="action-info-container">
-        <h2>Your Very Own Self-Care Checklist</h2>
-        <p>
-          To help streamline activities & routines, as well as keep up with
-          personal responibilities, you can now write down all of your needs
-          here on QuaranMe!
-        </p>
-        <h2>
-          How To Use the Checklist
-        </h2>
-        <p id="script">
-          <ol>
-            <li>Click on "What's my task of the day?"</li> 
-            <li>Type your task!</li> 
-            <li>Press "Add". If you do not have any
-                text written within the text form, you will 
-                recieve an alert informing you that there is 
-                no text, and will make you write some.</li> 
-            <li> Once you have completed an item, click on it to check it off your checklist. If you wish to delete your task completely,
-                 click the "×" button shown on the right side of your list item.</li> 
-        </ol>
-        </p>
-      </div>
-
-      <!--Create a flex item to hold your action checklist here-->
-      <div class="action-list-container" id="checklist">
-        <div class="list-header">
-          <h2 id="checklist-header">My Action Items</h2>
-          <p id="instructions">
-            <!--Once you have completed an item, click it to check it off your list!-->
+    <br/>
+    
+    <div>
+      <div class="physical-columns">
+        <div class="columns">
+          <h3>No Spend Week/Day.</h3>
+          <p>
+            If you are having impulses to buy something <br />
+            that’s not necessary, pretend you bought the <br />
+            things you wanted and transfer your money to <br />
+            your savings account or piggy bank!<br />
           </p>
-          <div id = "input-text">
-          <input
-            type="text"
-            id="myInput"
-            placeholder="What's my task of the day?"
-          />
-          <span onclick="newElement()" class="addBtn">Add</span>
-          </div>
         </div>
-        <ul id="my-list">
-          <li class="action-li">Meditate!</li>
-        </ul>
+        <div class="columns">
+          <h3>Budget</h3>
+          <ul>
+            <li>
+              Create a spreadsheet on things you spent <br />
+              money on!
+            </li>
+            <li>
+              Set up a certain amount of money you<br /> want to save 
+              and certain amount for your<br /> expenses!
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </body>

@@ -9,21 +9,22 @@
       sizes="32x32"
     />
 
-    <title>Take Action</title>
+    <title>Resources</title>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- import the webpage's stylesheet -->
+    <!-- import the webpage's stylesheets -->
     <link rel="stylesheet" href="/style.css" />
     <link rel="stylesheet" href="/take-action.css" />
     <link rel="stylesheet" href="/column.css" />
+
     <link rel="stylesheet" href="resources.css" />
 
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
 
-    <!--import font-->
+    <!-- Add your Google fonts here -->
     <link
       href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap"
       rel="stylesheet"
@@ -34,6 +35,7 @@
       rel="stylesheet"
     />
   </head>
+
   <body class="subpage">
     <div>
       <nav>
@@ -65,56 +67,53 @@
     </div>
 
     <div class="page-header-action">
-      <h1>Take Action</h1>
+      <h1>Resources</h1>
     </div>
 
-    <!--Create a flex container to hold the description of your action and your check list -->
-    <div class="flex-container-action">
-      <!--Create a flex item to hold your description here-->
-      <div class="action-info-container">
-        <h2>Your Very Own Self-Care Checklist</h2>
-        <p>
-          To help streamline activities & routines, as well as keep up with
-          personal responibilities, you can now write down all of your needs
-          here on QuaranMe!
-        </p>
-        <h2>
-          How To Use the Checklist
-        </h2>
-        <p id="script">
-          <ol>
-            <li>Click on "What's my task of the day?"</li> 
-            <li>Type your task!</li> 
-            <li>Press "Add". If you do not have any
-                text written within the text form, you will 
-                recieve an alert informing you that there is 
-                no text, and will make you write some.</li> 
-            <li> Once you have completed an item, click on it to check it off your checklist. If you wish to delete your task completely,
-                 click the "×" button shown on the right side of your list item.</li> 
-        </ol>
-        </p>
-      </div>
+    <div class="container-resources">
+      <ul class="resource-list">
+        <li>
+          <strong
+            ><a href="https://selfcareisforeveryone.com/"
+              >Self Care is for Everyone</a
+            >.</strong
+          >
+          Self-Care Is For Everyone exists to make self-care and healing
+          resources, reminders, and experiences more accessible for everyone. At
+          Self-Care Is For Everyone, we aim to remind our community of their
+          inherent self-worth, normalize conversations around mental health, and
+          encourage individuals to seek help.
+        </li>
 
-      <!--Create a flex item to hold your action checklist here-->
-      <div class="action-list-container" id="checklist">
-        <div class="list-header">
-          <h2 id="checklist-header">My Action Items</h2>
-          <p id="instructions">
-            <!--Once you have completed an item, click it to check it off your list!-->
-          </p>
-          <div id = "input-text">
-          <input
-            type="text"
-            id="myInput"
-            placeholder="What's my task of the day?"
-          />
-          <span onclick="newElement()" class="addBtn">Add</span>
-          </div>
-        </div>
-        <ul id="my-list">
-          <li class="action-li">Meditate!</li>
-        </ul>
-      </div>
+        <li>
+          <strong
+            ><a href="https://www.selfcareday.com/">#SelfCareDay</a>.</strong
+          >
+          On July 24th, Self-Care Day, and everyday, Crisis Text Line wants you
+          make time for what matters. Connecting with others can do wonders for
+          your mental wellness. Spending time doing the things that help you
+          care for yourself may improve your mental wellness.
+        </li>
+        <li>
+          <strong
+            ><a href="https://www.self.com/topic/self-care"
+              >Self: Self-Care Articles</a
+            >.</strong
+          >
+          Learn more about Self-care from SELF, a wellness site dedicated to
+          giving you accurate and genuinely helpful information on topics
+          related to your health.
+        </li>
+        <li>
+          <strong
+            ><a href="https://www.loveisrespect.org/for-yourself/self-care/"
+              >What is Self Care?</a
+            >.</strong
+          >
+          "Self-care means taking the time to care for yourself in whichever
+          ways work best for you." -Love is Respect
+        </li>
+      </ul>
     </div>
   </body>
 </html>

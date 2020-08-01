@@ -1,0 +1,119 @@
+.page-header-action {
+  /*
+  display: flex;
+  flex-wrap: wrap; */
+  padding: 15px;
+  width: 100%;
+  position: relative;
+  text-transform: uppercase;
+  background-color: #473049;
+  line-height: 25px;
+}
+
+h1 {
+  line-height: normal;
+}
+
+.timer-info-container {
+  width: 100%;
+  margin-right: 5%;
+  margin-left: 0;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding-right: 35px;
+  padding-left: 35px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  font-size: 18px;
+  color: #473049;
+  flex-grow: 2;
+  /*border-style: dotted;*/ /*Uncomment to see the outline of the container*/
+}
+
+.timer-input-container {
+  width: 75%;
+  padding: 35px;
+  margin: 5%;
+  flex-grow: 1;
+  background-color: #473049;
+  /*border-style: dotted;*/ /*Uncomment to see the outline of the container*/
+}
+#mns{
+  margin:5px;
+  display: block;
+  padding: 5px;
+  width: 70px;
+}
+#scs{
+  display:block;
+  padding: 5px;
+  margin: 5px;
+  width: 70px;
+}
+
+#btnct{
+   display: block;
+   background-color: #fffaec; /* Green */
+  border: none;
+  color: #473049;
+  padding: 5px;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  font-size: 16px;
+  overflow:hidden;
+  width: 100px;
+  border-radius: 5%;
+  margin: 5px;
+}
+
+#btnct_res{
+  display : block;
+  text-align: center;
+  width: 100px;
+  font-size: 16px;
+  padding: 5px;
+  overflow: hidden;
+  background-color: #fffaec;
+   color: #473049;
+    border-radius: 5%;
+  margin: 5px;
+
+}
+
+#btnct_end{
+  width: 100px;
+  padding: 5px;
+  overflow:hidden;
+  background-color: #fffaec;
+   color: #473049;
+    border-radius: 5%;
+  margin: 5px;
+
+}
+#timer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+}
+#timer-box{
+  padding: 10px;
+  height:auto;
+  background-color: white;
+  color: black;
+  box-sizing: border-box;
+  border-radius: 25px;
+  margin-top:100px;
+  align-content: center;
+}
+
+.buttons{
+  display: flex;
+  flex-direction: row;
+  flex-shrink:3;
+  flex-wrap: wrap;
+}
+
+.video-flex{
+}
